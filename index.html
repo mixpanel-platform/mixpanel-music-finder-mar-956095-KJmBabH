@@ -10,13 +10,15 @@
 
      <script>
 
+
       var params = {
           from: '2016-05-01',
           to: '2016-05-15',
+          limit: 3,
       };
     
 
-      MP.api.funnel('Page Loaded','test test',params).done(function(results) { 
+      MP.api.funnel('Page Loaded','test test').done(function(results) { 
         console.log(results); 
       }); 
 
