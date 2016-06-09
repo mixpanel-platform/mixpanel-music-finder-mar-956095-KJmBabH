@@ -10,18 +10,13 @@
 
      <script>
 
-      // var eventObject = {
-      //     event: 'Page Loaded'
-      // };
-      
-      
       var params = {
-          from: 2016-04-01,
-          to: 2016-05-15,
+          from: '2016-05-01',
+          to: '2016-05-15',
       };
     
 
-      MP.api.funnel({event: 'Page Loaded'},{event: 'test test'}).done(function(results) { 
+      MP.api.funnel('Page Loaded','test test',params).done(function(results) { 
         console.log(results); 
       }); 
 
